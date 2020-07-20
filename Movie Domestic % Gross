@@ -1,0 +1,182 @@
+mov <- read.csv(file.choose())
+#data exploration
+head(mov)
+summary(mov)
+str(mov)
+#activate ggplot2
+library(ggplot2)
+#cool insight
+ggplot(data=mov, aes(x=Day.of.Week) + geom_bar())
+#cool insight
+ggplot(data=mov, aes(x=Day.of.Week, geom_bar())
+#cool insight
+ggplot(data=mov, aes(x=Day.of.Week)) + geom_bar()
+#cool insight
+ggplot(data=mov, aes(x=Day.of.Week))
+#cool insight
+ggplot(data=mov, aes(x=Day.of.Week)) + geom_bar()
+#filter 1
+filt <- movie$Genre=="Action"
+#filter 1
+filt <- mov$Genre=="Action"
+mov2 <- mov[filt,]
+mov2
+mov(Genre)
+movG[Genre]
+mov[Genre]
+mov[genre]
+View(mov)
+mov2
+summary(mov2)
+#filter 1
+filt <- (mov$Genre=="Action")
+mov$Genre
+mov2$Genre
+#filter 1
+filt <- (mov$Genre=="Action") | (mov$Genre=="adventure") | (mov$Genre=="animation") | (mov$Genre=="comedy") | (mov$Genre=="drama")
+mov2 <- mov[filt,]
+mov$Genre
+mov2
+mov2$Genre
+mov$Studio
+)
+#filter2
+filt2 <- mov$Studio %in% c("Buena Vista Studios", "WB", "Fox", "Universal", "Sony", "Paramount Pictures")
+mov2 <- mov[filt, filt2]
+mov2 <- mov[filt, filt2]
+mov2 <- mov[filt & filt2]
+mov2 <- mov[filt & filt2,]
+mov2
+#prepare the plot's data and aes layers
+p <- ggplot(data=mov2, x=Genre, y=Gross...US)
+p
+p + geom_bar()
+p + geom_point()
+p + geom_point(color=Genre)
+#prepare the plot's data and aes layers
+p <- ggplot(data=mov2, aes(x=Genre, y=Gross...US))
+p + geom_point()
+p + geom_boxplot()
+p + geom_jitter() +geom_boxplot()
+p + geom_jitter() +geom_boxplot(alpha=10)
+p + geom_jitter() +geom_boxplot(alpha=0.7)
+p + geom_jitter() +geom_boxplot(alpha=0.6)
+p + geom_jitter(color="blue") +geom_boxplot(alpha=0.6)
+p + geom_jitter(aes(size=0.5)) +geom_boxplot(alpha=0.6)
+p + geom_jitter(aes(size=0)) +geom_boxplot(alpha=0.6)
+p + geom_jitter(aes(size=-0.5)) +geom_boxplot(alpha=0.6)
+p + geom_jitter(aes(color=Studio)) +geom_boxplot(alpha=0.6)
+p + geom_jitter(aes(color=Studio, size=Budget...mill)) +geom_boxplot(alpha=0.6)
+p + geom_jitter(aes(color=Studio, size=Budget...Mill)) +geom_boxplot(alpha=0.6)
+p + geom_jitter(aes(color=Studio, size=Budget...mill.)) +geom_boxplot(alpha=0.6)
+p + geom_jitter(aes(color=Studio, size=Budget...mill.)) +geom_boxplot(alpha=0.6)
+#activate ggplot2
+library(ggplot2)
+p + geom_jitter(aes(color=Studio, size=Budget...mill.)) +geom_boxplot(alpha=0.6)
+p + geom_jitter(aes(color=Studio, size=Budget...mill.)) +geom_boxplot(alpha=0.6, outlier.colour+NA)
+p + geom_jitter(aes(color=Studio, size=Budget...mill.)) +geom_boxplot(alpha=0.6, outlier.colour=NA)
+q <- p + geom_jitter(aes(color=Studio, size=Budget...mill.)) +geom_boxplot(alpha=0.6, outlier.colour=NA)
+q
+#non-data ink
+q <- q + xlab("Genre") + ylab("Gross % US") + ggtile("Domestic Gross % by genre")
+#non-data ink
+q <- q + xlab("Genre") + ylab("Gross % US") + ggtile("Domestic Gross % by Genre")
+#non-data ink
+q <- q + xlab("Genre") + ylab("Gross % US") + ggtitle("Domestic Gross % by Genre")
+#non-data ink
+q <- q + xlab("Genre") + ylab("Gross % US") + ggtitle("Domestic Gross % by Genre")
+q
+#theme
+q <-  q + theme(axis.title.x=element_text(color="Blue", size=15), (axis.title.y=element_text(color="Blue", size=15))
+(axis.text.y=element_text(size=10))
+plot.title=element_text(size=20))
+q
+legend.title=element_text(size=15))
+legend.title=element_text(size=15))
+q
+legend.title=element_text(size=15))
+legend.title=element_text(size=15)
+#theme
+q <-  q + theme(axis.title.x=element_text(color="Blue", size=15),
+axis.title.y=element_text(color="Blue", size=15),
+axis.text.x=element_text(size=10),
+axis.text.y=element_text(size=10),
+plot.title=element_text(size=20)
+legend.title=element_text(size=15))
+#theme
+q <-  q + theme(axis.title.x=element_text(color="Blue", size=15),
+axis.title.y=element_text(color="Blue", size=15),
+axis.text.x=element_text(size=10),
+axis.text.y=element_text(size=10),
+plot.title=element_text(size=20),
+legend.title=element_text(size=15))
+q
+#theme
+q <-  q + theme(axis.title.x=element_text(color="Blue", size=15),
+axis.title.y=element_text(color="Blue", size=15),
+axis.text.x=element_text(size=10),
+axis.text.y=element_text(size=10),
+plot.title=element_text(size=15),
+legend.title=element_text(size=15))
+q
+#theme
+q <-  q + theme(axis.title.x=element_text(color="Blue", size=15),
+axis.title.y=element_text(color="Blue", size=15),
+axis.text.x=element_text(size=10),
+axis.text.y=element_text(size=10),
+plot.title=element_text(size=15),
+legend.title=element_text(size=15), legend.text+element_text(size=15))
+#theme
+q <-  q + theme(axis.title.x=element_text(color="Blue", size=15),
+axis.title.y=element_text(color="Blue", size=15),
+axis.text.x=element_text(size=10),
+axis.text.y=element_text(size=10),
+plot.title=element_text(size=15),
+legend.title=element_text(size=15), legend.text=element_text(size=15))
+q
+#theme
+q <-  q + theme(axis.title.x=element_text(color="Blue", size=15),
+axis.title.y=element_text(color="Blue", size=15),
+axis.text.x=element_text(size=10),
+axis.text.y=element_text(size=10),
+plot.title=element_text(size=15),
+legend.title=element_text(size=15), legend.text=element_text(size=10))
+q
+#theme
+q <-  q + theme(axis.title.x=element_text(color="Blue", size=15),
+axis.title.y=element_text(color="Blue", size=15),
+axis.text.x=element_text(size=10),
+axis.text.y=element_text(size=10),
+plot.title=element_text(size=15, family="Comic Sans MS"),
+legend.title=element_text(size=15), legend.text=element_text(size=10))
+q
+#theme
+q <-  q + theme(axis.title.x=element_text(color="Blue", size=15),
+axis.title.y=element_text(color="Blue", size=15),
+axis.text.x=element_text(size=10),
+axis.text.y=element_text(size=10),
+plot.title=element_text(size=15),
+legend.title=element_text(size=15), legend.text=element_text(size=10), text=element_text(family="Comic Sans MS"))
+q
+#final touch
+q$labels$size <- "Budget $M"
+q
+install.packages("ggplot2")
+install.packages("ggplot2")
+install.packages("ggplot2")
+install.packages("ggplot2")
+install.packages("ggplot2")
+#end
+library(ggplot2)
+q
+#end
+library(ggplot2)
+q
+#end
+library(ggplot2)
+q
+#end
+library(ggplot2)
+#final touch
+q$labels$size <- "Budget $M"
+q
